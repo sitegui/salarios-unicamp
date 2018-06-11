@@ -44,4 +44,7 @@ INDENIZAÇÕES
 5. Os descontos relativos às consignatárias autorizadas pelo servidor não foram computados (associações, sindicatos, operações bancárias, etc)
 
 ## Acesso público
-Em breve vou disponibilizar uma instância online para queries pela comunidade
+Faça queries nessa base de dados diretamente através desse endereço: http://salarios-unicamp.sitegui.com.br
+
+Atenção: todas as queries executadas serão salvas nos logs do serviço.
+Se deseja privacidade total, faça o download dos dados e rode em seu próprio ambiente.
