@@ -14,6 +14,15 @@ Se quiser importá-los para uma instância MongoDB basta ter `node` e `mongo` in
 3. `mongoimport -d unicamp -c salarios --drop compiled.json`
 4. `mongo unicamp`
 
+## Exemplos de buscas
+- Salário médio por cargo:
+http://salarios-unicamp.sitegui.com.br/?aggregate&local.unicamp&salarios&match&ano%3A%202018%2C%20mes%3A%201&group&_id%3A%20%27%24cargo%27%2C%20liquidoM%C3%A9dio%3A%20%7B%24avg%3A%20%27%24liquido%27%7D%2C%20num%3A%20%7B%24sum%3A%201%7D%2C%20liquidoTotal%3A%20%7B%24sum%3A%20%27%24liquido%27%7D&sort&liquidoM%C3%A9dio%3A%20-1
+
+- Custo de folha por área:
+http://salarios-unicamp.sitegui.com.br/?aggregate&local.unicamp&salarios&match&ano%3A%202018%2C%20mes%3A%201&group&_id%3A%20%27%24areas.0%27%2C%20liquidoM%C3%A9dio%3A%20%7B%24avg%3A%20%27%24liquido%27%7D%2C%20num%3A%20%7B%24sum%3A%201%7D%2C%20liquidoTotal%3A%20%7B%24sum%3A%20%27%24liquido%27%7D&sort&liquidoTotal%3A%20-1
+
+Achou algum resultado interessante? Aceito [Pull Request](https://github.com/sitegui/salarios-unicamp/pulls)
+
 ## Sobre os dados
 (Retiradas do site da Unicamp)
 
