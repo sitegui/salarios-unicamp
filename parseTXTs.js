@@ -9,9 +9,11 @@ for (let filename of fs.readdirSync('txts')) {
 	let data = windows1252.decode(fs.readFileSync('txts/' + filename, 'binary')),
 		match = filename.match(/^(\d{4})-(\d\d).txt$/),
 		ano = Number(match[1]),
-		mes = Number(match[2])
+		mes = Number(match[2]),
+		lines = data.split(/\r?\n/)
 
-	for (let line of data.split('\r\n')) {
+	console.log('Got %d lines for %s', lines.length, filename)
+	for (let line of lines) {
 		if (!line) {
 			continue
 		}
