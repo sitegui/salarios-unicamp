@@ -1,0 +1,14 @@
+{
+  "name": "salarios-unicamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parseTXT.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "windows-1252": "^1.0.0"
+  }
+}
